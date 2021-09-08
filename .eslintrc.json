@@ -1,5 +1,10 @@
 {
+  "ignorePatterns": [
+    "dist",
+    "*.config.js"
+  ],
   "extends": [
+    "airbnb",
     "airbnb-typescript",
     "airbnb/hooks",
     "plugin:@typescript-eslint/recommended",
@@ -9,7 +14,8 @@
   "plugins": [
     "react",
     "@typescript-eslint",
-    "jest"
+    "jest",
+    "import"
   ],
   "env": {
     "browser": true,
@@ -38,5 +44,22 @@
         "endOfLine": "auto"
       }
     ]
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [
+        ".ts",
+        ".tsx"
+      ]
+    },
+    "react": {
+      "pragma": "React",
+      "version": "detect"
+    },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true
+      }
+    }
   }
 }
