@@ -1286,6 +1286,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"confusing-browser-globals@npm:^1.0.10":
+  version: 1.0.10
+  resolution: "confusing-browser-globals@npm:1.0.10"
+  checksum: 7ccdc44c2ca419cf6576c3e4336106e18d1c5337f547e461342f51aec4a10f96fdfe45414b522be3c7d24ea0b62bf4372cd37768022e4d6161707ffb2c0987e6
+  languageName: node
+  linkType: hard
+
 "console-browserify@npm:^1.1.0":
   version: 1.2.0
   resolution: "console-browserify@npm:1.2.0"
@@ -1788,6 +1795,37 @@ __metadata:
   version: 4.0.0
   resolution: "escape-string-regexp@npm:4.0.0"
   checksum: 98b48897d93060f2322108bf29db0feba7dd774be96cd069458d1453347b25ce8682ecc39859d4bca2203cc0ab19c237bcc71755eff49a0f8d90beadeeba5cc5
+  languageName: node
+  linkType: hard
+
+"eslint-config-airbnb-base@npm:^14.2.1":
+  version: 14.2.1
+  resolution: "eslint-config-airbnb-base@npm:14.2.1"
+  dependencies:
+    confusing-browser-globals: ^1.0.10
+    object.assign: ^4.1.2
+    object.entries: ^1.1.2
+  peerDependencies:
+    eslint: ^5.16.0 || ^6.8.0 || ^7.2.0
+    eslint-plugin-import: ^2.22.1
+  checksum: 858bea748a3c8685b52fcf2488e6a0b964022f8387f4ee1e69cb707d4fda2a409f09eb8eea658bcd83fae3519967d10208ba7576dd3d3202b8cf0b9d1a6e21eb
+  languageName: node
+  linkType: hard
+
+"eslint-config-airbnb@npm:^18.2.1":
+  version: 18.2.1
+  resolution: "eslint-config-airbnb@npm:18.2.1"
+  dependencies:
+    eslint-config-airbnb-base: ^14.2.1
+    object.assign: ^4.1.2
+    object.entries: ^1.1.2
+  peerDependencies:
+    eslint: ^5.16.0 || ^6.8.0 || ^7.2.0
+    eslint-plugin-import: ^2.22.1
+    eslint-plugin-jsx-a11y: ^6.4.1
+    eslint-plugin-react: ^7.21.5
+    eslint-plugin-react-hooks: ^4 || ^3 || ^2.3.0 || ^1.7.0
+  checksum: ea11cd0006912f7086fb278e03180da4bc2378cf4e93b1dd970775d8e9b50fd11a64209bdc0ed17654d29abe4ccfa19baa4d1e1e5bd3eb660fcf4798ba2810d2
   languageName: node
   linkType: hard
 
@@ -3597,37 +3635,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nextjs-tailwindcss-typescript-starter@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "nextjs-tailwindcss-typescript-starter@workspace:."
-  dependencies:
-    "@types/node": ^16.9.1
-    "@types/react": ^17.0.20
-    "@types/react-dom": ^17.0.9
-    "@typescript-eslint/eslint-plugin": ^4.31.0
-    "@typescript-eslint/parser": ^4.31.0
-    autoprefixer: ^10.3.4
-    eslint: ^7.32.0
-    eslint-config-next: ^11.1.2
-    eslint-config-prettier: ^8.3.0
-    eslint-import-resolver-typescript: ^2.4.0
-    eslint-plugin-import: ^2.24.2
-    eslint-plugin-jsx-a11y: ^6.4.1
-    eslint-plugin-prettier: ^4.0.0
-    eslint-plugin-react: ^7.25.1
-    eslint-plugin-react-hooks: ^4.2.0
-    eslint-plugin-unused-imports: ^1.1.4
-    next: ^11.1.2
-    postcss: ^8.3.6
-    postcss-import: ^14.0.2
-    prettier: ^2.4.0
-    react: ^17.0.2
-    react-dom: ^17.0.2
-    tailwindcss: ^2.2.15
-    typescript: ^4.4.2
-  languageName: unknown
-  linkType: soft
-
 "node-emoji@npm:^1.11.0":
   version: 1.11.0
   resolution: "node-emoji@npm:1.11.0"
@@ -3817,7 +3824,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"object.entries@npm:^1.1.4":
+"object.entries@npm:^1.1.2, object.entries@npm:^1.1.4":
   version: 1.1.4
   resolution: "object.entries@npm:1.1.4"
   dependencies:
@@ -4353,6 +4360,38 @@ __metadata:
   checksum: 823bf443c6dd14f669984dea25757b37993f67e8d94698996064035edd43bed8a5a17a9f12e439c2b35df1078c6bec05a6c86e336209eb1061e8025c481168e8
   languageName: node
   linkType: hard
+
+"pureidea-starter@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "pureidea-starter@workspace:."
+  dependencies:
+    "@types/node": ^16.9.1
+    "@types/react": ^17.0.20
+    "@types/react-dom": ^17.0.9
+    "@typescript-eslint/eslint-plugin": ^4.31.0
+    "@typescript-eslint/parser": ^4.31.0
+    autoprefixer: ^10.3.4
+    eslint: ^7.32.0
+    eslint-config-airbnb: ^18.2.1
+    eslint-config-next: ^11.1.2
+    eslint-config-prettier: ^8.3.0
+    eslint-import-resolver-typescript: ^2.4.0
+    eslint-plugin-import: ^2.24.2
+    eslint-plugin-jsx-a11y: ^6.4.1
+    eslint-plugin-prettier: ^4.0.0
+    eslint-plugin-react: ^7.25.1
+    eslint-plugin-react-hooks: ^4.2.0
+    eslint-plugin-unused-imports: ^1.1.4
+    next: ^11.1.2
+    postcss: ^8.3.6
+    postcss-import: ^14.0.2
+    prettier: ^2.4.0
+    react: ^17.0.2
+    react-dom: ^17.0.2
+    tailwindcss: ^2.2.15
+    typescript: ^4.4.2
+  languageName: unknown
+  linkType: soft
 
 "purgecss@npm:^4.0.3":
   version: 4.0.3
