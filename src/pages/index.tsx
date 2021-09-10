@@ -1,17 +1,14 @@
+import Footer from "@/components/global/footer/Footer"
+import Header from "@/components/global/header/Header"
+
 export default function Home(): JSX.Element {
 	return (
-		<div className="container flex items-center p-4 mx-auto min-h-screen justify-center">
-			<main>
-				<h1 className="font-mono text-xl code">
-					Welcome to{` `}
-					<span className="text-purple-700 hover:text-blue-400">Nextjs</span>,
-					<span className="text-indigo-700 hover:text-blue-400">
-						TailwindCSS
-					</span>
-					{` `}and{` `}
-					<span className="text-blue-700 hover:text-red-400">TypeScript</span>
-				</h1>
+		<div className="flex flex-col min-h-screen">
+			<Header />
+			<main className="flex-auto">
+				<h1 className="font-mono text-xl code">Pureidea title</h1>
 			</main>
+			<Footer />
 		</div>
 	)
 }
