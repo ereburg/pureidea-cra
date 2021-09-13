@@ -1,5 +1,5 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
-const colors = require("tailwindcss/colors")
+// const colors = require("tailwindcss/colors")
 
 module.exports = {
   mode: "jit",
@@ -10,8 +10,15 @@ module.exports = {
   darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
+      padding: {
+        7.5: "1.875rem",
+        15: "3.75rem",
+      },
       fontFamily: {
         body: ['"Fira Sans Condensed"', "sans-serif"],
+      },
+      fontSize: {
+        inherit: "inherit",
       },
       colors: {
         grey: {
@@ -21,10 +28,17 @@ module.exports = {
           4: "#BDBDBD",
           5: "#E0E0E0",
           6: "#F2F2F2",
+          7: "#969696",
         },
         text: {
           DEFAULT: "#141926",
         },
+      },
+      gridTemplateColumns: {
+        footer: "repeat(3, minmax(auto, 250px))",
+      },
+      boxShadow: {
+        contacts: "0px 0.75rem 2rem rgba(92, 141, 255, 0.22)",
       },
     },
     container: {
@@ -45,5 +59,6 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [],
+  // eslint-disable-next-line global-require
+  plugins: [require("@tailwindcss/forms")],
 }
