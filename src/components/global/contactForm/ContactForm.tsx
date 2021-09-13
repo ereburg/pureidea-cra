@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { ITextSectionProps } from "@/shared/types/ITextSection"
 
 interface IContactsCheckboxes {
   name: string
@@ -6,7 +7,7 @@ interface IContactsCheckboxes {
   checked?: boolean
 }
 
-export default function ContactForm(): JSX.Element {
+export default function ContactForm(props: ITextSectionProps): JSX.Element {
   const checkboxes: IContactsCheckboxes[] = [
     {
       id: 1,
@@ -30,8 +31,10 @@ export default function ContactForm(): JSX.Element {
     },
   ]
 
+  const { rootClass } = props
+
   return (
-    <section className="pt-12 pb-15">
+    <section className={rootClass}>
       <div className="container pt-15 pb-7.5 rounded-[32px] shadow-contacts">
         <div className="max-w-[1080px] mx-auto flex flex-wrap justify-between gap-4">
           <div className="flex-[470px] flex-grow-0">

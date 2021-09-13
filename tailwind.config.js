@@ -10,8 +10,14 @@ module.exports = {
   darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
+      inset: {
+        7.5: "1.875rem",
+        "-7.5": "-1.875rem",
+      },
       padding: {
         7.5: "1.875rem",
+        12.5: "3.125rem",
+        13: "3.25rem",
         15: "3.75rem",
       },
       margin: {
@@ -23,6 +29,7 @@ module.exports = {
       },
       fontSize: {
         inherit: "inherit",
+        "4.25xl": "2.5rem",
         "4.5xl": "2.75rem",
       },
       colors: {
@@ -41,6 +48,9 @@ module.exports = {
         accent: {
           500: "#FF3D00",
           600: "#f33a00",
+        },
+        primary: {
+          DEFAULT: "#1CC8EE",
         },
       },
       gridTemplateColumns: {
@@ -66,8 +76,13 @@ module.exports = {
       "2xl": "1536px",
       // => @media (min-width: 1536px) { ... }
     },
+    underlineOffset: {
+      small: "0.125rem",
+      medium: "0.25rem",
+      large: "0.375rem",
+    },
   },
   variants: {},
-  // eslint-disable-next-line global-require
-  plugins: [require("@tailwindcss/forms")],
+  // eslint-disable-next-line global-require,import/no-extraneous-dependencies
+  plugins: [require("@tailwindcss/forms"), require("tailwind-underline-utils")],
 }

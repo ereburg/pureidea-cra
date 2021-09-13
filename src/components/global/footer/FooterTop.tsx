@@ -1,4 +1,4 @@
-import Logo from "@/components/global/Logo/Logo"
+import Logo from "@/components/global/logo/Logo"
 
 interface IFooterSection {
   id: number
