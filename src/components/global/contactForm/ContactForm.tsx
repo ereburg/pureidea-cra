@@ -57,7 +57,7 @@ export default function ContactForm(): JSX.Element {
                     value={d.name}
                     id={d.name}
                   />
-                  <span className="rounded-[2rem] bg-grey-4 group-focus-within:bg-grey-3 peer-checked:bg-accent-red text-white py-1.5 px-5">
+                  <span className="rounded-[2rem] bg-grey-4 group-focus-within:bg-grey-3 peer-checked:bg-accent-500 text-white py-1.5 px-5">
                     {d.name}
                   </span>
                 </label>
@@ -74,7 +74,7 @@ export default function ContactForm(): JSX.Element {
                   <input
                     id="username"
                     name="username"
-                    className="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 placeholder-grey-4 text-grey-2 focus:ring-0 focus:border-accent-red"
+                    className="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 placeholder-grey-4 text-grey-2 focus:ring-0 focus:border-accent-500"
                     type="text"
                     placeholder="ФИО"
                     required
@@ -86,7 +86,7 @@ export default function ContactForm(): JSX.Element {
                   <input
                     id="phone"
                     name="phone"
-                    className="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 placeholder-grey-4 text-grey-2 focus:ring-0 focus:border-accent-red"
+                    className="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 placeholder-grey-4 text-grey-2 focus:ring-0 focus:border-accent-500"
                     type="text"
                     inputMode="tel"
                     placeholder="Телефон"
@@ -99,7 +99,7 @@ export default function ContactForm(): JSX.Element {
                   <input
                     id="website"
                     name="website"
-                    className="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 placeholder-grey-4 text-grey-2 focus:ring-0 focus:border-accent-red"
+                    className="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 placeholder-grey-4 text-grey-2 focus:ring-0 focus:border-accent-500"
                     type="text"
                     inputMode="url"
                     placeholder="Адрес сайта"
@@ -115,7 +115,7 @@ export default function ContactForm(): JSX.Element {
                   <textarea
                     id="message"
                     name="message"
-                    className="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 placeholder-grey-4 text-grey-2 focus:ring-0 focus:border-accent-red"
+                    className="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 placeholder-grey-4 text-grey-2 focus:ring-0 focus:border-accent-500"
                     placeholder="Опишите, пожалуйста, задачу"
                     rows={2}
                   />
@@ -123,7 +123,7 @@ export default function ContactForm(): JSX.Element {
               </p>
               <p className="text-right">
                 <button
-                  className="inline-block px-10 py-2 text-white text-lg font-medium bg-accent-red rounded-lg"
+                  className="inline-block px-10 py-2 text-white text-lg font-medium bg-accent-500 rounded-lg hover:bg-accent-600 focus:outline-none focus:ring-2 focus:ring-accent-500 focus:ring-opacity-50 focus:ring-offset-1"
                   type="submit"
                 >
                   Отправить

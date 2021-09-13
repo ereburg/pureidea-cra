@@ -39,7 +39,8 @@ module.exports = {
           DEFAULT: "#141926",
         },
         accent: {
-          red: "#FF3D00",
+          500: "#FF3D00",
+          600: "#f33a00",
         },
       },
       gridTemplateColumns: {
