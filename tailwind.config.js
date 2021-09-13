@@ -14,11 +14,16 @@ module.exports = {
         7.5: "1.875rem",
         15: "3.75rem",
       },
+      margin: {
+        12.5: "3.125rem",
+        13: "3.25rem",
+      },
       fontFamily: {
         body: ['"Fira Sans Condensed"', "sans-serif"],
       },
       fontSize: {
         inherit: "inherit",
+        "4.5xl": "2.75rem",
       },
       colors: {
         grey: {
@@ -32,6 +37,9 @@ module.exports = {
         },
         text: {
           DEFAULT: "#141926",
+        },
+        accent: {
+          red: "#FF3D00",
         },
       },
       gridTemplateColumns: {
