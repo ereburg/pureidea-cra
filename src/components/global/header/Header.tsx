@@ -20,7 +20,7 @@ const Header: FC<HeaderProps> = ({ type = `default` }) => {
       className={
         type === `transparent`
           ? `absolute top-0 inset-x-0 z-50`
-          : `sticky top-0 bg-main-gradient`
+          : `static top-0 z-50 bg-main-gradient`
       }
     >
       <div className="px-6 py-5 flex justify-between items-center">

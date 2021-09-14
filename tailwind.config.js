@@ -52,6 +52,9 @@ module.exports = {
         19: "4.75rem",
         25: "6.25rem",
       },
+      maxHeight: {
+        accordion: "10000px",
+      },
       fontFamily: {
         body: ['"Fira Sans Condensed"', "sans-serif"],
       },

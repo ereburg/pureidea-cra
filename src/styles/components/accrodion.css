@@ -1,0 +1,9 @@
+.accordion-item {
+  transition: max-height 0.4s cubic-bezier(1, 0, 1, 0);
+  height: auto;
+  max-height: 9999px;
+}
+.accordion-item.collapsed {
+  max-height: 0;
+  transition: max-height 0.45s cubic-bezier(0, 1, 0, 1);
+}
