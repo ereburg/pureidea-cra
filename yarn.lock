@@ -1196,6 +1196,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"classcat@npm:^5.0.3":
+  version: 5.0.3
+  resolution: "classcat@npm:5.0.3"
+  checksum: 360de2cd8c3ed66fdfded123624e2db2694e32165e1ed20e55afe5c74f9df3d263c414a7f8ca4da7b84f8f7e13a3557581ca475b0fb580ca4f18885857bee011
+  languageName: node
+  linkType: hard
+
 "classnames@npm:2.2.6":
   version: 2.2.6
   resolution: "classnames@npm:2.2.6"
@@ -4392,6 +4399,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^4.31.0
     "@typescript-eslint/parser": ^4.31.0
     autoprefixer: ^10.3.4
+    classcat: ^5.0.3
     eslint: ^7.32.0
     eslint-config-airbnb: ^18.2.1
     eslint-config-next: ^11.1.2

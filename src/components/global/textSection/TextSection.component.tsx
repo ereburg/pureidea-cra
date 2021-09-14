@@ -1,4 +1,4 @@
-import { ITextSectionProps } from "@/shared/types/ITextSection"
+import { ITextSectionProps } from "@/components/global/textSection/ITextSection.interface"
 
 export default function TextSection(props: ITextSectionProps): JSX.Element {
   const { title, children, rootClass } = props

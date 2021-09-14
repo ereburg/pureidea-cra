@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { ITextSectionProps } from "@/shared/types/ITextSection"
+import { ITextSectionProps } from "@/components/global/textSection/ITextSection.interface"
 
 interface IContactsCheckboxes {
   name: string

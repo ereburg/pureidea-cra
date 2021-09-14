@@ -19,10 +19,20 @@ module.exports = {
         12.5: "3.125rem",
         13: "3.25rem",
         15: "3.75rem",
+        17: "4.25rem",
+        17.5: "4.375rem",
+        18: "4.5rem",
+        19: "4.75rem",
       },
       margin: {
+        7.5: "1.875rem",
         12.5: "3.125rem",
         13: "3.25rem",
+        15: "3.75rem",
+        17: "4.25rem",
+        17.5: "4.375rem",
+        18: "4.5rem",
+        19: "4.75rem",
       },
       fontFamily: {
         body: ['"Fira Sans Condensed"', "sans-serif"],
@@ -53,11 +63,17 @@ module.exports = {
           DEFAULT: "#1CC8EE",
         },
       },
+      borderRadius: {
+        "4xl": "2rem",
+      },
       gridTemplateColumns: {
         footer: "repeat(3, minmax(auto, 250px))",
       },
       boxShadow: {
         contacts: "0px 0.75rem 2rem rgba(92, 141, 255, 0.22)",
+      },
+      backgroundImage: {
+        "tile-gradient": "linear-gradient(99.7deg, #009FFF 0%, #EC2F4B 100%)",
       },
     },
     container: {
