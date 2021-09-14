@@ -6,6 +6,7 @@ import TextSection from "@/components/global/textSection/TextSection.component"
 import { TileCard } from "@/components/global/tile-card/tile-card"
 import { HomeAbout } from "@/components/home/about/home-about"
 import { HomeCTA } from "@/components/home/cta/cta-cards"
+import { HomeHero } from "@/components/home/hero/home-hero"
 
 export default function Home(): JSX.Element {
   return (
@@ -13,9 +14,11 @@ export default function Home(): JSX.Element {
       <Head>
         <title>Pureidea - Главная страница</title>
       </Head>
-      <Header />
+      <Header type="transparent" />
       <main className="flex-auto">
-        <h1 className="font-mono text-xl code">Pureidea title</h1>
+        <h1 className="sr-only">Pureidea.ru</h1>
+        <HomeHero />
+
         <TextSection
           rootClass="mt-17.5"
           title={

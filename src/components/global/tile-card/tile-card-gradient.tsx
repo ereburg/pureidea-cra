@@ -11,7 +11,7 @@ export const TileCardGradient: FC<TileCardDefaultProps> = ({
   <article className="h-full">
     <a
       className={cc([
-        `block h-full bg-tile-gradient border border-grey-6 pt-6 pb-10 px-9 rounded-4xl shadow-base`,
+        `block h-full bg-main-gradient border border-grey-6 pt-6 pb-10 px-9 rounded-4xl shadow-base`,
         className,
       ])}
       {...props}

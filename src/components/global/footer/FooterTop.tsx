@@ -195,7 +195,7 @@ const data: IFooterSection[] = [
 export default function FooterTop(): JSX.Element {
   return (
     <div className="container py-14 flex gap-36 items-start">
-      <Logo />
+      <Logo className="text-grey" />
       <div className="grid grid-cols-footer gap-8">
         <div className="col">
           <div>

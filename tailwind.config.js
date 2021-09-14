@@ -7,7 +7,7 @@ module.exports = {
     "./src/components/**/*.{ts,tsx,js,jsx}",
     "./src/pages/**/*.{ts,tsx,js,jsx}",
   ],
-  darkMode: "class", // or 'media' or 'class'
+  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       inset: {
@@ -15,6 +15,7 @@ module.exports = {
         "-7.5": "-1.875rem",
       },
       padding: {
+        4.5: "1.125rem",
         7.5: "1.875rem",
         12.5: "3.125rem",
         13: "3.25rem",
@@ -24,8 +25,10 @@ module.exports = {
         18: "4.5rem",
         19: "4.75rem",
         25: "6.25rem",
+        30: "7.5rem",
       },
       margin: {
+        4.5: "1.125rem",
         7.5: "1.875rem",
         12.5: "3.125rem",
         13: "3.25rem",
@@ -35,6 +38,7 @@ module.exports = {
         18: "4.5rem",
         19: "4.75rem",
         25: "6.25rem",
+        30: "7.5rem",
       },
       gap: {
         11: "2.75rem",
@@ -101,13 +105,14 @@ module.exports = {
       },
       boxShadow: {
         base: "0px 0.75rem 2rem rgba(92, 141, 255, 0.22)",
+        "header-btn": "0px 8px 16px rgba(17, 17, 17, 0.15)",
         "cta-card-btn": "0px 8px 16px rgba(17, 17, 17, 0.15)",
       },
       dropShadow: {
         "cta-card": "0px 2px 2px rgba(0, 0, 0, 0.3)",
       },
       backgroundImage: {
-        "tile-gradient": "linear-gradient(99.7deg, #009FFF 0%, #EC2F4B 100%)",
+        "main-gradient": "linear-gradient(99.7deg, #009FFF 0%, #EC2F4B 100%)",
         "cta-card-gradient-btn":
           "linear-gradient(85.38deg, #33A9FF 6.35%, #FFA3FD 93.64%)",
         "cta-card-gradient-purple":
