@@ -1,13 +1,18 @@
+import Head from "next/head"
 import Footer from "@/components/global/footer/Footer"
 import Header from "@/components/global/header/Header"
 import ContactForm from "@/components/global/contactForm/ContactForm"
 import TextSection from "@/components/global/textSection/TextSection.component"
 import { TileCard } from "@/components/global/tile-card/tile-card"
 import { HomeAbout } from "@/components/home/about/home-about"
+import { HomeCTA } from "@/components/home/cta/cta-cards"
 
 export default function Home(): JSX.Element {
   return (
     <div className="flex flex-col min-h-screen font-body">
+      <Head>
+        <title>Pureidea - Главная страница</title>
+      </Head>
       <Header />
       <main className="flex-auto">
         <h1 className="font-mono text-xl code">Pureidea title</h1>
@@ -119,9 +124,10 @@ export default function Home(): JSX.Element {
             </div>
           </div>
         </TextSection>
-        <div className="relative mt-17 pb-17 after:absolute after:bottom-0 after:inset-x-0 after:pt-[72%] after:bg-home-about after:-z-1">
+        <div className="relative mt-17 pb-10 after:absolute after:bottom-0 after:inset-x-0 after:pt-[72%] after:bg-home-about after:-z-1">
           <div className="container">
             <HomeAbout />
+            <HomeCTA className="mt-36" />
           </div>
         </div>
         <TextSection
