@@ -70,7 +70,7 @@ module.exports = {
         footer: "repeat(3, minmax(auto, 250px))",
       },
       boxShadow: {
-        contacts: "0px 0.75rem 2rem rgba(92, 141, 255, 0.22)",
+        base: "0px 0.75rem 2rem rgba(92, 141, 255, 0.22)",
       },
       backgroundImage: {
         "tile-gradient": "linear-gradient(99.7deg, #009FFF 0%, #EC2F4B 100%)",

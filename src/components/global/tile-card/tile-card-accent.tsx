@@ -11,7 +11,7 @@ export const TileCardAccent: FC<TileCardDefaultProps> = ({
   <article className="h-full">
     <a
       className={cc([
-        `block h-full bg-accent-500 border border-grey-5 pt-6 pb-10 px-9 rounded-4xl`,
+        `block h-full bg-accent-500 border border-grey-6 pt-6 pb-10 px-9 rounded-4xl shadow-base`,
         className,
       ])}
       {...props}

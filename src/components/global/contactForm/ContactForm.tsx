@@ -35,7 +35,7 @@ export default function ContactForm(props: ITextSectionProps): JSX.Element {
 
   return (
     <section className={rootClass}>
-      <div className="container pt-15 pb-7.5 rounded-[32px] shadow-contacts">
+      <div className="container pt-15 pb-7.5 rounded-[32px] shadow-base">
         <div className="max-w-[1080px] mx-auto flex flex-wrap justify-between gap-4">
           <div className="flex-[470px] flex-grow-0">
             <h2 className="text-[2.625rem] text-grey leading-tight font-medium">
