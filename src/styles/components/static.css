@@ -1,0 +1,27 @@
+.static > *:first-child {
+  @apply mt-0
+}
+
+.static__wrapper {
+  @apply pl-12
+}
+
+.static__wrapper > *:first-child {
+  @apply mt-0
+}
+
+.static h2 {
+  @apply text-4xl font-bold leading-none text-grey-2 mt-10
+}
+
+.static h2 + * {
+  @apply mt-7.5
+}
+
+.static h3 {
+  @apply text-2xl font-bold leading-none text-grey-2 mt-7.5
+}
+
+.static p {
+  @apply text-lg leading-tight text-grey-2 mt-6 tracking-wide
+}

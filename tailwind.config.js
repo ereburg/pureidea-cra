@@ -62,6 +62,22 @@ module.exports = {
         primary: {
           DEFAULT: "#1CC8EE",
         },
+        lang: {
+          react: "#53C1DE",
+          next: "#141926",
+          ts: "#3178C6",
+          svelte: "#FF3E00",
+          ng: "#B52E31",
+          vue: "#41B883",
+          go: "#5DC9E1",
+          py: "#417EB0",
+          node: "#539E43",
+          docker: "#1B81A5",
+          kub: "#326DE6",
+          grafana: "#F4891B",
+          mongo: "#12924F",
+          db: "#00618A",
+        },
       },
       borderRadius: {
         "4xl": "2rem",
@@ -74,6 +90,12 @@ module.exports = {
       },
       backgroundImage: {
         "tile-gradient": "linear-gradient(99.7deg, #009FFF 0%, #EC2F4B 100%)",
+        "home-about":
+          "url(\"data:image/svg+xml,%3Csvg width='1920' height='1396' viewBox='0 0 1920 1396' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 611.5L1920 0V1395.5H0V611.5Z' fill='%231CC8EE' fill-opacity='0.05'/%3E%3C/svg%3E%0A\")",
+      },
+      zIndex: {
+        "-1": "-1",
+        "-10": "-10",
       },
     },
     container: {

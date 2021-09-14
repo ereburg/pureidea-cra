@@ -3,6 +3,7 @@ import Header from "@/components/global/header/Header"
 import ContactForm from "@/components/global/contactForm/ContactForm"
 import TextSection from "@/components/global/textSection/TextSection.component"
 import { TileCard } from "@/components/global/tile-card/tile-card"
+import { HomeAbout } from "@/components/home/about/home-about"
 
 export default function Home(): JSX.Element {
   return (
@@ -118,6 +119,11 @@ export default function Home(): JSX.Element {
             </div>
           </div>
         </TextSection>
+        <div className="relative mt-17 pb-17 after:absolute after:bottom-0 after:inset-x-0 after:pt-[72%] after:bg-home-about after:-z-1">
+          <div className="container">
+            <HomeAbout />
+          </div>
+        </div>
         <TextSection
           title={<span className="underline-text-xl">PUREIDEA</span>}
           rootClass="mt-12.5"
