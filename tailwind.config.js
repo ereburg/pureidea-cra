@@ -110,6 +110,7 @@ module.exports = {
       },
       dropShadow: {
         "cta-card": "0px 2px 2px rgba(0, 0, 0, 0.3)",
+        "decor-1": "0px 4px 6px rgba(0, 0, 0, 0.06)",
       },
       backgroundImage: {
         "main-gradient": "linear-gradient(99.7deg, #009FFF 0%, #EC2F4B 100%)",
