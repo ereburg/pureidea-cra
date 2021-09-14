@@ -76,10 +76,16 @@ module.exports = {
       "2xl": "1536px",
       // => @media (min-width: 1536px) { ... }
     },
+    underlineThickness: {
+      thin: "2px",
+      thick: "4px",
+    },
     underlineOffset: {
-      small: "0.125rem",
-      medium: "0.25rem",
-      large: "0.375rem",
+      xs: "0.125rem",
+      sm: "0.25rem",
+      md: "0.375rem",
+      lg: "0.5rem",
+      xl: "0.625rem",
     },
   },
   variants: {},

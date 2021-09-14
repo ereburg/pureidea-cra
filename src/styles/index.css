@@ -4,3 +4,5 @@
 /* Your own custom component styles */
 
 @import 'tailwindcss/utilities';
+
+@import "components/underline.css";

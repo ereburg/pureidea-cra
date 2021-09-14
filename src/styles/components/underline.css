@@ -1,0 +1,3 @@
+.underline-text-xl {
+  @apply underline underline-accent-500 underline-thickness-thick underline-offset-xl;
+}

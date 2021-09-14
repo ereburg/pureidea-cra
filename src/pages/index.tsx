@@ -11,11 +11,34 @@ export default function Home(): JSX.Element {
         <h1 className="font-mono text-xl code">Pureidea title</h1>
       </main>
       <TextSection
-        title='Разработка <span class="underline underline-accent-500 underline-thickness-thin underline-offset-large">вeб-приложений</span> и сложных систем'
+        title='Разработка <span class="underline-text-xl">вeб-приложений</span> и сложных систем'
         rootClass="pt-12.5"
       >
         <div className="text-grey-2 text-lg tracking-tight leading-tight">
-          <div className="">
+          <div className="max-w-[1160px]">
+            <p>
+              Наша команда поможет внятно составить ТЗ, спроектировать и
+              разработать продукт, вэб платформу или мобильное приложение,
+              интранет портал компании или что угодно другое.
+            </p>
+            <br />
+            <p>
+              Проект делится на этапы, далее фиксируем конкретные результаты на
+              каждом из них, что позволит минимизировать риски и произвести
+              точную оценку трудозатрат, притом с обоих сторон. Оплаты тоже
+              будут идти согласно плана проекта, тем самым добавим прозрачности
+              в проектную работу. В конце каждого этапа вы получите конкретный
+              результат.
+            </p>
+          </div>
+        </div>
+      </TextSection>
+      <TextSection
+        title='Про технологии, инструменты и нашу <span class="underline-text-xl">компетенцию</span>'
+        rootClass="pt-12.5"
+      >
+        <div className="text-grey-2 text-lg tracking-tight leading-tight">
+          <div className="max-w-[1160px] ">
             <p>
               Мы занимаемся разработкой программного обеспечения и PWA
               приложений. Найдём решение проблем в кратчайшие сроки и без потери
@@ -32,27 +55,9 @@ export default function Home(): JSX.Element {
         </div>
       </TextSection>
       <TextSection
-        title='Про технологии, инструменты и нашу <span class="underline underline-accent-500 underline-thickness-thin underline-offset-large">компетенцию</span>'
+        title='<span class="underline-text-xl">PUREIDEA</span>'
         rootClass="pt-12.5"
       >
-        <div className="text-grey-2 text-lg tracking-tight leading-tight">
-          <div className="">
-            <p>
-              Мы занимаемся разработкой программного обеспечения и PWA
-              приложений. Найдём решение проблем в кратчайшие сроки и без потери
-              качества продукта, поможем вам сэкономить бюджет и драгоценное
-              время
-            </p>
-            <br />
-            <p>
-              * некоторые услуги доступны только при работах на полноценном
-              проекте. Эта оптимизация помогает нам сфокусироваться на контроле,
-              улучшении качества и плотном взаимодействии с клиентами
-            </p>
-          </div>
-        </div>
-      </TextSection>
-      <TextSection title="PUREIDEA" rootClass="pt-12.5">
         <div className="grid grid-cols-2 gap-24 text-grey-2 text-lg tracking-tight leading-tight">
           <div className="">
             <p>
@@ -68,7 +73,7 @@ export default function Home(): JSX.Element {
             <p>
               В период пандемии мы выстроили и оптимизировали процессы для
               удалённой работы, не растеряв уровень, качество и точность,
-              работая по Agile.
+              работая по&nbsp;Agile.
             </p>
             <br />
             <p>
