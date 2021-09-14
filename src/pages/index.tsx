@@ -11,8 +11,14 @@ export default function Home(): JSX.Element {
       <main className="flex-auto">
         <h1 className="font-mono text-xl code">Pureidea title</h1>
         <TextSection
-          title='Разработка <span class="underline-text-xl">вeб-приложений</span> и сложных систем'
-          rootClass="pt-17.5"
+          rootClass="mt-17.5"
+          title={
+            <>
+              Разработка{` `}
+              <span className="underline-text-xl">вeб-приложений</span> и
+              сложных систем
+            </>
+          }
         >
           <div className="text-grey-2 text-lg tracking-tight leading-tight">
             <div className="max-w-[1160px]">
@@ -33,58 +39,66 @@ export default function Home(): JSX.Element {
             </div>
           </div>
         </TextSection>
-        <ul className="grid grid-cols-3 gap-6 container mt-24">
-          <li>
-            <TileCard title="Проект под ключ" type="white">
-              <p>
-                Поймём проблематику, распишем задачи, подготовим техническое
-                задание, соберём прототип, создадим дизайн, разработаем MVP,
-                отшлифуем, наполним и запустим
-              </p>
-            </TileCard>
-          </li>
-          <li>
-            <TileCard title="Разработка" type="gradient">
-              <p>
-                Сложность зависит от задач стоящих перед бизнесом,
-                инфраструктурой клиента и требуемой расчётной нагрузки, которая
-                ляжет на конечный продукт
-              </p>
-            </TileCard>
-          </li>
-          <li>
-            <TileCard title="Автоматизация" type="white-gradient">
-              <p>
-                Автоматизируем бизнес процессы, комплексные и сложные
-                программно-аппаратные комплексы, создадим REST API
-              </p>
-            </TileCard>
-          </li>
-          <li>
-            <TileCard title="Дизайн" type="accent" />
-          </li>
-          <li>
-            <TileCard title="Аналитика" type="white">
-              <p>
-                Выслушаем, найдём проблемные места и улучшим бизнес процессы.
-                Переведём все пожелания бизнеса в техническое задание, учтём
-                ограничения ПО, производительности и бизнес ресурсов
-              </p>
-            </TileCard>
-          </li>
-          <li>
-            <TileCard title="Поддержка" type="white">
-              <p>
-                Гарантийная поддержка разработанного нашей командой ПО. Обслужим
-                и модернизируем ИТ-инфраструктуры, поможем найти проблемные
-                места
-              </p>
-            </TileCard>
-          </li>
-        </ul>
+        <section className="container mt-24">
+          <h2 className="sr-only">Чем мы занимаемся?</h2>
+          <ul className="grid grid-cols-3 gap-6">
+            <li>
+              <TileCard title="Проект под ключ" type="white">
+                <p>
+                  Поймём проблематику, распишем задачи, подготовим техническое
+                  задание, соберём прототип, создадим дизайн, разработаем MVP,
+                  отшлифуем, наполним и запустим
+                </p>
+              </TileCard>
+            </li>
+            <li>
+              <TileCard title="Разработка" type="gradient">
+                <p>
+                  Сложность зависит от задач стоящих перед бизнесом,
+                  инфраструктурой клиента и требуемой расчётной нагрузки,
+                  которая ляжет на конечный продукт
+                </p>
+              </TileCard>
+            </li>
+            <li>
+              <TileCard title="Автоматизация" type="white-gradient">
+                <p>
+                  Автоматизируем бизнес процессы, комплексные и сложные
+                  программно-аппаратные комплексы, создадим REST API
+                </p>
+              </TileCard>
+            </li>
+            <li>
+              <TileCard title="Дизайн" type="accent" />
+            </li>
+            <li>
+              <TileCard title="Аналитика" type="white">
+                <p>
+                  Выслушаем, найдём проблемные места и улучшим бизнес процессы.
+                  Переведём все пожелания бизнеса в техническое задание, учтём
+                  ограничения ПО, производительности и бизнес ресурсов
+                </p>
+              </TileCard>
+            </li>
+            <li>
+              <TileCard title="Поддержка" type="white">
+                <p>
+                  Гарантийная поддержка разработанного нашей командой ПО.
+                  Обслужим и модернизируем ИТ-инфраструктуры, поможем найти
+                  проблемные места
+                </p>
+              </TileCard>
+            </li>
+          </ul>
+        </section>
         <TextSection
-          title='Про технологии, инструменты и нашу <span class="underline-text-xl">компетенцию</span>'
-          rootClass="pt-19"
+          title={
+            <>
+              Про технологии, инструменты и нашу{` `}
+              <span className="underline-text-xl">компетенцию</span>
+            </>
+          }
+          rootClass="mt-19"
         >
           <div className="text-grey-2 text-lg tracking-tight leading-tight">
             <div className="max-w-[1160px]">
@@ -105,8 +119,8 @@ export default function Home(): JSX.Element {
           </div>
         </TextSection>
         <TextSection
-          title='<span class="underline-text-xl">PUREIDEA</span>'
-          rootClass="pt-12.5"
+          title={<span className="underline-text-xl">PUREIDEA</span>}
+          rootClass="mt-12.5"
         >
           <div className="max-w-[1240px] grid grid-cols-2 gap-24 text-grey-2 text-lg tracking-tight leading-tight">
             <div className="">
@@ -135,7 +149,7 @@ export default function Home(): JSX.Element {
           </div>
         </TextSection>
       </main>
-      <ContactForm rootClass="pt-12 pb-15" />
+      <ContactForm rootClass="mt-12 mb-15" />
       <Footer />
     </div>
   )

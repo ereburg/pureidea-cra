@@ -1,5 +1,5 @@
 export interface ITextSectionProps {
-  title?: string | null
+  title?: JSX.Element
   children?: JSX.Element
   rootClass?: string
 }
