@@ -1,0 +1,45 @@
+version: 2.1
+
+orbs:
+    node: circleci/node@4.1.0
+    docker: circleci/docker@1.7.0
+
+jobs:
+    build:
+        executor: node/default
+        steps:
+            - checkout
+            - node/install-packages:
+                  cache-path: ~/project/node_modules
+                  override-ci-command: npm install
+            - run: npm run build
+
+    deploy:
+        docker:
+            - image: buildpack-deps:trusty
+        steps:
+            - add_ssh_keys:
+                  fingerprints:
+                      - "38:2f:a8:3b:76:72:44:c5:af:ac:b8:81:85:64:fa:84"
+            - run: ssh -o "StrictHostKeyChecking=no" epicbytes@89.108.71.85 docker service update iwrk_nexttest --image 'epicbytes/nexttest-front:'$CIRCLE_SHA1 --with-registry-auth
+
+workflows:
+    main:
+        jobs:
+            - build
+            - docker/publish:
+                  cache_from: "epicbytes/nexttest-front:latest"
+                  image: epicbytes/nexttest-front
+                  path: .
+                  tag: '$CIRCLE_SHA1,latest'
+                  requires:
+                      - build
+                  filters:
+                      branches:
+                          only: main
+            - deploy:
+                  requires:
+                      - docker/publish
+                  filters:
+                      branches:
+                          only: main

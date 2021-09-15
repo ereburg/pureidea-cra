@@ -9,7 +9,7 @@ import HeaderMenu from "@/components/global/header/header-menu"
 type HeaderTypes = "transparent" | "default"
 
 interface HeaderProps extends DefaultProps {
-  type: HeaderTypes
+  type?: HeaderTypes
 }
 
 const Header: FC<HeaderProps> = ({ type = `default` }) => {

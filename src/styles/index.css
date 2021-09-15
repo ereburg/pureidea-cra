@@ -1,9 +1,9 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
+@tailwind 'tailwindcss/base';
+@tailwind 'tailwindcss/components';
 
 /* Your own custom component styles */
 
-@import 'tailwindcss/utilities';
+@tailwind 'tailwindcss/utilities';
 
 @import "utils/underline.css";
 @import "components/static.css";
