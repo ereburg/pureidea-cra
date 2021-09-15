@@ -1,6 +1,5 @@
 import { FC } from "react"
 import Image from "next/image"
-import Lang from "@/images/home/home-about.png"
 
 export const HomeAbout: FC = () => (
   <section className="flex gap-28 border-grey-5 border bg-[#FCFCFC] p-16 pr-3.5 shadow-base rounded-4xl">
@@ -98,7 +97,7 @@ export const HomeAbout: FC = () => (
       </div>
     </div>
     <div className="flex-[410px]">
-      <Image src={Lang} />
+      <img src="/images/home/home-about.png" alt="Languages" />
     </div>
   </section>
 )

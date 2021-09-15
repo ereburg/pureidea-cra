@@ -1,6 +1,6 @@
 import { FC } from "react"
 import cc from "classcat"
-import Logo from "@/components/global/logo/Logo"
+// import Logo from "@/components/global/logo/Logo"
 import { DefaultProps } from "@/components/home/cta/cta-card.d"
 import HeaderMenuItem from "@/components/global/header/header-menu-item"
 
